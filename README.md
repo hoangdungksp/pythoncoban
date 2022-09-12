@@ -1,6 +1,6 @@
 # pythoncoban
 
-#Kinh nghiệm
+# Kinh nghiệm
 
 OrderedDict : giống dict nhưng nhớ thứ tự key insert vào
 
@@ -8,6 +8,6 @@ OrderedDict : giống dict nhưng nhớ thứ tự key insert vào
 
 OrderedDict([('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', 5)])
 
-### Filter a list
+# Filter a list
 filter(gia_tri_can_loai_bo, list
 
