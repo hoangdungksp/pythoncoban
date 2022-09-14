@@ -17,19 +17,19 @@ function test() {
 # Date and Time
 Kiem tra rat nhieu thu lien quan den calendar isleap(), weekday()...read more
 ```python
-   import calendar
-   from datetime import datetime
-   #read more https://docs.python.org/3/library/calendar.html
+  import calendar
+  from datetime import datetime
+  #read more https://docs.python.org/3/library/calendar.html
 ```
 
 # Errors and Exceptions
 Kiem tra loi voi multi exceptions,
 ```python
-try:
-  print(a/b)
-except ZeroDivisionError as e:
-  print("Loi:", e)
-except ValueError as er:
-  print("Loi:", er)
+  try:
+    print(a/b)
+  except ZeroDivisionError as e:
+    print("Loi:", e)
+  except ValueError as er:
+    print("Loi:", er)
 ```
 # Class
