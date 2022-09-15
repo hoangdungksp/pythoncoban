@@ -33,3 +33,13 @@ Kiem tra loi voi multi exceptions,
     print("Loi:", er)
 ```
 # Class
+__sub__, khai bao __xyz__ la overide lại phương thức đã có sẳn
+```python
+  class Points(object):
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+    def __sub__(self, no)
+      ...
+```
