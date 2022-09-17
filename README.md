@@ -76,11 +76,13 @@ Dùng sorted()
 map() and lambda function
 Dùng map() có thể map kiểu dữ liệu, map(lambda x: x**2, function)
 ```python
-  print (list(map(len, ['Tina', 'Raj', 'Tom'])))  #[4, 3, 3] 
+  print (list(map(len, ['Tina', 'Raj', 'Tom'])))  
+  #[4, 3, 3] 
   
   ##########################
   sum = lambda a, b, c: a + b + c
-  sum(1, 2, 3) #6
+  sum(1, 2, 3) 
+  #6
   
   ##########################
   cube = lambda x: x**3
@@ -112,8 +114,10 @@ map() and filter()
 ```
 reduce() đưa vào list và tính giá trị theo hàm lambda
 ```python
-  reduce(lambda x, y : x + y,[1,2,3])#6
+  reduce(lambda x, y : x + y,[1,2,3])
+  #6
   
-  reduce(lambda x, y : x + y, [1,2,3], -3)#3
+  reduce(lambda x, y : x + y, [1,2,3], -3)
+  #3
   
 
