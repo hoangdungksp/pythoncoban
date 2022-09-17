@@ -43,3 +43,31 @@ __sub__, khai bao __xyz__ la overide lại phương thức đã có sẳn
     def __sub__(self, no)
       ...
 ```
+# Built-Ins
+Dung re.sub de tim va replace
+Dùng eval() de chuyen string to int va operator
+```python
+  import re
+  x=1
+  lst = 'x**3'
+  result = re.sub(r'x', str(x), lst)
+  print(eval('2**3')) //8
+```
+
+Dùng zipped() để nối list lại với nhau tương tứng từng phần tử
+```
+>>> A = [1,2,3]
+>>> B = [6,5,4]
+>>> C = [7,8,9]
+>>> X = [A] + [B] + [C]
+>>> print zip(*X)
+[(1, 6, 7), (2, 5, 8), (3, 4, 9)]
+```
+Dùng any(), all() check điều kiện
+```python
+  print(all([x>0 for x in lst]) and any([str(x)==str(x)[::-1] for x in lst]))
+```
+Dùng sorted()
+```python
+  # Read more -> https://docs.python.org/3/howto/sorting.html
+```
