@@ -71,3 +71,49 @@ Dùng sorted()
 ```python
   # Read more -> https://docs.python.org/3/howto/sorting.html
 ```
+
+# Python Functionals
+map() and lambda function
+Dùng map() có thể map kiểu dữ liệu, map(lambda x: x**2, function)
+```python
+  print (list(map(len, ['Tina', 'Raj', 'Tom'])))  #[4, 3, 3] 
+  
+  ##########################
+  sum = lambda a, b, c: a + b + c
+  sum(1, 2, 3) #6
+  
+  ##########################
+  cube = lambda x: x**3
+
+  def fibonacci(n):
+      # return a list of fibonacci numbers
+      fibo = []
+      for i in range(n):
+          fibo.append(i)
+
+      for i in range(2, len(fibo)):
+          fibo[i] = fibo[i-1] + fibo[i-2]
+
+      return fibo
+
+  if __name__ == '__main__':
+      n = int(input())
+      print(list(map(cube, fibonacci(n))))
+```
+map() and filter()
+```python
+  l = list(range(10))
+  l = list(map(lambda x: x*x, l))
+  #[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+  
+  l = list(filter(lambda x: x>10 and x<80, l))
+  print(l)
+  #[16, 25, 36, 49, 64]
+```
+reduce() đưa vào list và tính giá trị theo hàm lambda
+```python
+  reduce(lambda x, y : x + y,[1,2,3])#6
+  
+  reduce(lambda x, y : x + y, [1,2,3], -3)#3
+  
+
