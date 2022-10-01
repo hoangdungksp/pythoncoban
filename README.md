@@ -119,5 +119,40 @@ reduce() đưa vào list và tính giá trị theo hàm lambda
   
   reduce(lambda x, y : x + y, [1,2,3], -3)
   #3
-  
+```  
+# Regex and Parsing
 
+## Regex
+Học kỹ lookaround 
+(?=) nếu có ngay sau x thì sẽ lấy x ====> ví dụ x(?=ABC)  "xABC x1 x2" kqua lấy x của (xABC)
+(?!) nếu khác ngay sau x thì sẽ lấy x ====> ví dụ x(?!ABC)  "xABC x1 x2" kqua lấy x của (x1, x2)
+
+(?<=) nếu có ngay phía trước x thì lấy x ===> ví dụ (?<=ABC)x  "ABCx 1x 2x" kqua lấy x của (ABCx)
+(?<!) nếu có ngay phía trước x thì lấy x ===> ví dụ (?<!ABC)x  "ABCx 1x 2x" kqua lấy x của (1x, 2x)
+
+(?:) ko gộp group ví dụ (25)1\1 và  (?:25)1\1 cho 25125
+
+Đọc thêm ở đây https://quickref.me/regex#regex-in-python
+
+## HTML Parser
+```python
+from html.parser import HTMLParser
+
+#Parse tag HTML
+class MyHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        print "Found a start tag  :", tag
+    def handle_endtag(self, tag):
+        print "Found an end tag   :", tag
+    def handle_startendtag(self, tag, attrs):
+        print "Found an empty tag :", tag
+        
+# Parse comments and data
+class MyHTMLParser(HTMLParser):
+    def handle_comment(self, data):
+          print "Comment  :", data
+          
+class MyHTMLParser(HTMLParser):
+    def handle_data(self, data):
+        print "Data     :", data       
+```
