@@ -124,6 +124,7 @@ reduce() đưa vào list và tính giá trị theo hàm lambda
 
 ## Regex
 Học kỹ lookaround 
+```
 (?=) nếu có ngay sau x thì sẽ lấy x ====> ví dụ x(?=ABC)  "xABC x1 x2" kqua lấy x của (xABC)
 (?!) nếu khác ngay sau x thì sẽ lấy x ====> ví dụ x(?!ABC)  "xABC x1 x2" kqua lấy x của (x1, x2)
 
@@ -131,8 +132,9 @@ Học kỹ lookaround
 (?<!) nếu có ngay phía trước x thì lấy x ===> ví dụ (?<!ABC)x  "ABCx 1x 2x" kqua lấy x của (1x, 2x)
 
 (?:) ko gộp group ví dụ (25)1\1 và  (?:25)1\1 cho 25125
-
+```
 Đọc thêm ở đây https://quickref.me/regex#regex-in-python
+
 
 ## HTML Parser
 ```python
