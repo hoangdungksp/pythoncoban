@@ -133,7 +133,7 @@ Học kỹ lookaround
 
 (?:) ko gộp group ví dụ (25)1\1 và  (?:25)1\1 cho 25125
 ```
-Đọc thêm ở đây https://quickref.me/regex#regex-in-python
+Đọc thêm function Regex Python ở đây https://quickref.me/regex#regex-in-python
 
 
 ## HTML Parser
