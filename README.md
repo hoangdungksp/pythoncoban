@@ -159,6 +159,36 @@ class MyHTMLParser(HTMLParser):
         print "Data     :", data       
 ```
 # Closures and Decorators
+Closures là gì? là iner function có quyền truy cập biến của function outter
+```python
+  def outter_func(name):
+    def inner_func():
+      return "Hello " + name
+    return inner_func
+
+  greet = outter_func('Jason')
+  print(greet()) # Hello Jason
+```
+Decorator là gì? là bạn có
+
+```python
+  def this_is_decorator(a_func):
+    def wrap_func(name):
+      print('dong thu 1')
+      a_func(name)
+      print('dong thu 2')
+    return wrap_func
+
+  @this_is_decorator
+  def add_more_greet(name):
+    print("Helo " + name)
+  add_more_greet('Jason')
+  
+# dong thu 1
+# Helo Jason
+# dong thu 2
+
+```
 
 ```python
   # Sort nested list by index
@@ -186,4 +216,5 @@ class MyHTMLParser(HTMLParser):
             yield f(person)
     return inner
 ```
+
 
