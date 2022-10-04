@@ -169,8 +169,8 @@ Closures là gì? là iner function có quyền truy cập biến của function
   greet = outter_func('Jason')
   print(greet()) # Hello Jason
 ```
-Decorator là gì? là bạn có
-
+Decorator là gì? là bạn có thể tạo func mới để decor cho function có sẳn
+Read more https://viblo.asia/p/function-decorator-trong-python-gDVK2QDe5Lj
 ```python
   def this_is_decorator(a_func):
     def wrap_func(name):
