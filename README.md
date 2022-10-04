@@ -174,6 +174,9 @@ class MyHTMLParser(HTMLParser):
   x.sort(key=itemgetter(2)) # sorted theo vi tri so 2
   x
   
+  sorted(x, key=lambda x:int(x[2]) #Luu y ep kieu du lieu cho gia tri can sorted
+  x
+  
   # yield: su dung cho iterables
   def person_lister(f):
     def inner(people):
