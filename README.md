@@ -217,7 +217,7 @@ Read more https://viblo.asia/p/function-decorator-trong-python-gDVK2QDe5Lj
     return inner
 ```
 
-# Numpy
+# Numpy (Dong x Cot)
 Giống với list chỉ có điều là mỗi elememnt trong array phải giống kiểu (same type)
 
 ## numpy.shape
@@ -278,4 +278,4 @@ Giống với list chỉ có điều là mỗi elememnt trong array phải giố
   [[1 2 3 0 0 0]
    [0 0 0 7 8 9]]   
 ```
-
+# zeros and ones
