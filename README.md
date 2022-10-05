@@ -220,34 +220,62 @@ Read more https://viblo.asia/p/function-decorator-trong-python-gDVK2QDe5Lj
 # Numpy
 Giống với list chỉ có điều là mỗi elememnt trong array phải giống kiểu (same type)
 
-numpy.shape
+## numpy.shape
 - Use shape to get array dimensions
 - Use shape to change array dimensions
 ```python
-my__1D_array = numpy.array([1, 2, 3, 4, 5])
-print my_1D_array.shape     #(5,) -> 1 row and 5 columns
+  my__1D_array = numpy.array([1, 2, 3, 4, 5])
+  print my_1D_array.shape     #(5,) -> 1 row and 5 columns
 
-import numpy
+  import numpy
 
-change_array = numpy.array([1,2,3,4,5,6])
-change_array.shape = (3, 2)
-print change_array      
+  change_array = numpy.array([1,2,3,4,5,6])
+  change_array.shape = (3, 2)
+  print change_array      
 
-#Output
-[[1 2]
-[3 4]
-[5 6]]
+  #Output
+  [[1 2]
+  [3 4]
+  [5 6]]
 ```
-numpy.reshape 
+## numpy.reshape 
 - Dùng để tạo mới shape cho array mà không thay đổi giá trị
 
-numpy.transpose
+## numpy.transpose
 - Tạo mới và xoay array
 
-flatten
+## flatten
 - Làm phẳng numpy array thanh 1 dimension
 ```python
-arr = numpy.arry(a_list)
-arr.flatten()
+  arr = numpy.arry(a_list)
+  arr.flatten()
+```
+## concatenated : ghép lại, nối lại
+- Dùng để dép numpy.array lại với nhau
+- Nếu numpy.array nhiều hơn 1 dimension thì chọn axis cần ghép lại
+```python
+  import numpy
+
+  array_1 = numpy.array([1,2,3])
+  array_2 = numpy.array([4,5,6])
+  array_3 = numpy.array([7,8,9])
+
+  print numpy.concatenate((array_1, array_2, array_3))    
+
+  #Output
+  [1 2 3 4 5 6 7 8 9]
+```
+```python
+  # Nhiều hơn 1 dimension
+  import numpy
+
+  array_1 = numpy.array([[1,2,3],[0,0,0]])
+  array_2 = numpy.array([[0,0,0],[7,8,9]])
+
+  print numpy.concatenate((array_1, array_2), axis = 1)   
+
+  #Output
+  [[1 2 3 0 0 0]
+   [0 0 0 7 8 9]]   
 ```
 
