@@ -217,4 +217,37 @@ Read more https://viblo.asia/p/function-decorator-trong-python-gDVK2QDe5Lj
     return inner
 ```
 
+# Numpy
+Giống với list chỉ có điều là mỗi elememnt trong array phải giống kiểu (same type)
+
+numpy.shape
+- Use shape to get array dimensions
+- Use shape to change array dimensions
+```python
+my__1D_array = numpy.array([1, 2, 3, 4, 5])
+print my_1D_array.shape     #(5,) -> 1 row and 5 columns
+
+import numpy
+
+change_array = numpy.array([1,2,3,4,5,6])
+change_array.shape = (3, 2)
+print change_array      
+
+#Output
+[[1 2]
+[3 4]
+[5 6]]
+```
+numpy.reshape 
+- Dùng để tạo mới shape cho array mà không thay đổi giá trị
+
+numpy.transpose
+- Tạo mới và xoay array
+
+flatten
+- Làm phẳng numpy array thanh 1 dimension
+```python
+arr = numpy.arry(a_list)
+arr.flatten()
+```
 
