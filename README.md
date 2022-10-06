@@ -278,4 +278,85 @@ Giống với list chỉ có điều là mỗi elememnt trong array phải giố
   [[1 2 3 0 0 0]
    [0 0 0 7 8 9]]   
 ```
-# zeros and ones
+## zeros and ones
+## numpy.identity and numpy.eye 
+
+```python
+  print numpy.identity(3)
+  #Output
+  [[ 1.  0.  0.]
+   [ 0.  1.  0.]
+   [ 0.  0.  1.]]
+ 
+   print numpy.eye(8, 7, k = 1)
+   #Output
+  [[ 0.  1.  0.  0.  0.  0.  0.]
+   [ 0.  0.  1.  0.  0.  0.  0.]
+   [ 0.  0.  0.  1.  0.  0.  0.]
+   [ 0.  0.  0.  0.  1.  0.  0.]
+   [ 0.  0.  0.  0.  0.  1.  0.]
+   [ 0.  0.  0.  0.  0.  0.  1.]
+   [ 0.  0.  0.  0.  0.  0.  0.]
+   [ 0.  0.  0.  0.  0.  0.  0.]]
+```
+
+## Function Operator element-wise
+```python
+  import numpy
+
+  a = numpy.array([1,2,3,4], float)
+  b = numpy.array([5,6,7,8], float)
+
+  print a + b                     #[  6.   8.  10.  12.]
+  print numpy.add(a, b)           #[  6.   8.  10.  12.]
+
+  print a - b                     #[-4. -4. -4. -4.]
+  print numpy.subtract(a, b)      #[-4. -4. -4. -4.]
+
+  print a * b                     #[  5.  12.  21.  32.]
+  print numpy.multiply(a, b)      #[  5.  12.  21.  32.]
+
+  print a / b (python3 a//b)      #[ 0.2         0.33333333  0.42857143  0.5       ]
+  print numpy.divide(a, b)        #[ 0.2         0.33333333  0.42857143  0.5       ]
+
+  print a % b                     #[ 1.  2.  3.  4.]
+  print numpy.mod(a, b)           #[ 1.  2.  3.  4.]
+
+  print a**b                      #[  1.00000000e+00   6.40000000e+01   2.18700000e+03   6.55360000e+04]
+  print numpy.power(a, b)         #[  1.00000000e+00   6.40000000e+01   2.18700000e+03   6.55360000e+04
+```
+
+## numpy.floor, numpy.ceil, numpy.rint
+- floor: làm lấy giá trị thấp nhất của i <= x
+```python
+  my_array = numpy.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])
+  print numpy.floor(my_array)         #[ 1.  2.  3.  4.  5.  6.  7.  8.  9.]
+```
+- ceil: làm lấy giá trị lớn nhất của i >= x
+```python
+  my_array = numpy.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])
+  print numpy.ceil(my_array)          #[  2.   3.   4.   5.   6.   7.   8.   9.  10.]
+```
+- rint: làm tròn 5.5 -> 6
+```python
+  my_array = numpy.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])
+  print numpy.rint(my_array)          #[  1.   2.   3.   4.   6.   7.   8.   9.  10.]
+```
+
+## numpy.sum and numpy.prod
+```python
+  my_array = numpy.array([ [1, 2], [3, 4] ])
+
+  print numpy.sum(my_array, axis = 0)         #Output : [4 6]
+  print numpy.sum(my_array, axis = 1)         #Output : [3 7]
+  print numpy.sum(my_array, axis = None)      #Output : 10
+  print numpy.sum(my_array)                   #Output : 10
+  
+  #prod is product 
+  my_array = numpy.array([ [1, 2], [3, 4] ])
+
+  print numpy.prod(my_array, axis = 0)            #Output : [3 8]
+  print numpy.prod(my_array, axis = 1)            #Output : [ 2 12]
+  print numpy.prod(my_array, axis = None)         #Output : 24
+  print numpy.prod(my_array)                      #Output : 24
+```
