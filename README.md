@@ -397,12 +397,12 @@ Giống với list chỉ có điều là mỗi elememnt trong array phải giố
        y2,
        y3]   
   iner product = scalar
-  x^T.y = [x1, x2. x3].[y1, = x1y1 + x2y2 + x3y3
-                        y2,
-                        y3]   
+  x^T.y = [x1, x2. x3]. [y1] = x1y1 + x2y2 + x3y3
+                        [y2]
+                        [y3]   
   outer product = matrix
-  x.y^T = [x1, [y1, y2 y3] = [[x1,y1 x2y2 x3y3], [x2,y1 x2y2 x2y3], [x3,y1 x3y2 x3y3]]
-           x2,
-           x3]
+  x.y^T = [x1] .[y1, y2 y3] = [[x1,y1 x2y2 x3y3], [x2,y1 x2y2 x2y3], [x3,y1 x3y2 x3y3]]
+          [x2]
+          [x3]
                     
 ```
