@@ -406,3 +406,9 @@ Giống với list chỉ có điều là mỗi elememnt trong array phải giố
           [x3]
                     
 ```
+## poly, roots, polyint, polyer, polyval, polyfit
+https://www.mathsisfun.com/algebra/polynomials.html
+
+## linalg.det,  linalg.eig, linalg.inv
+https://www.mathsisfun.com/algebra/matrix-determinant.html
+https://www.mathsisfun.com/algebra/eigenvalue.html
