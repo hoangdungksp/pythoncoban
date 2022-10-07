@@ -384,3 +384,25 @@ Giống với list chỉ có điều là mỗi elememnt trong array phải giố
   print numpy.max(my_array, axis = None)      #Output : 7
   print numpy.max(my_array)                   #Output : 7
 ```
+## numpy.dot dot product and numpy.cross cross product
+- Dot product cua 2 vector sẽ tạo vector mới bất kì 
+- Cross product của 2 vector sẽ tạo ra vector mới vuông góc với 2 vector kia
+
+## inner product and outer product
+```python
+  x = [x1,
+       x2,
+       x3]
+  y = [y1,
+       y2,
+       y3]   
+  iner product = scalar
+  x^T.y = [x1, x2. x3].[y1, = x1y1 + x2y2 + x3y3
+                        y2,
+                        y3]   
+  outer product = matrix
+  x.y^T = [x1, [y1, y2 y3] = [[x1,y1 x2y2 x3y3], [x2,y1 x2y2 x2y3], [x3,y1 x3y2 x3y3]]
+           x2,
+           x3]
+                    
+```
